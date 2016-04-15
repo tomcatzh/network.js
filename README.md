@@ -2,6 +2,11 @@
 
 A __JavaScript__ library, entirely written in ES6, to measure various aspects of a connection. It can accurately estimate a bandwidth/latency between a client (using a web browser) and a server (running a specific script).
 
+## 中文版的更改
+我没有做大的改变，只是汉化了Example文件，同时增加了利用奇虎360的[奇云测](http://ce.cloud.360.cn/)进行中国各地区性能测试的链接。
+
+我用这个版本，在[AWS](https://aws.amazon.com/)上建立并且共享了一个叫做ChinaSpeedTest的AMI，大家可以搜索直接启用。
+
 ## Installation
 
 Use Bower or download an archive [from the releases page](https://github.com/nesk/network.js/releases):
