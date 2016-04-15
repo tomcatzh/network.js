@@ -15,7 +15,13 @@ $(function() {
     var UI = {
         $btnStart: $('[data-measure]'),
         $btnAbort: $('[data-abort]'),
+	$btnJump: $('[data-jump]'),
         $output: $('output'),
+
+	jump: function() {
+		$('[data-domain]').val(document.location);
+		$('form.ce360').submit();
+	},
 
         start: function() {
             rawModule = $(this).data('measure');
@@ -130,6 +136,7 @@ $(function() {
      */
 
     UI.$btnStart.on('click', UI.start);
+    UI.$btnJump.on('click', UI.jump);
     UI.$btnAbort.on('click', UI.abort);
 
 });
